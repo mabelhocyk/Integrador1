@@ -1,0 +1,101 @@
+.cardColumn {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    z-index: 1;
+    background-color: rgb(51, 58, 64);
+    height: 80px;
+    width: 100vw;
+    position: fixed;
+}
+
+.navbar-nav {
+    background-color: rgba(51, 58, 64, 0.76);
+}
+
+.comprarTicketsNav {
+    color: #2aa845;
+}
+
+.laConferencia {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assests/images/ba1.jpg");
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.mainContainer {
+    position: absolute;
+    top: 35vh;
+    right: 10vw;
+
+    
+    font-size: 1.2rem;
+    text-align: end;
+
+    color: white;
+    height: 500px;
+    min-width: 300px;
+    width: 48vw;
+}
+
+
+
+.mainContainer-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.quieroSerOrador {
+    background-color: transparent;
+    border:1px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+}
+
+.comprarTickets {
+    padding: 10px;
+    background-color: #29a744;
+    border-radius: 5px;
+    border-color: transparent;
+    color: white;
+}
+
+.oradoresContainer {
+    height: 80vh;
+}
+
+.descriptionCard {
+    background-color: rgb(47, 54, 60);
+    font-size: large;
+}
+
+.headerCard {
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.inputForm {
+    background-color: #96c93e;
+    color: whitesmoke;
+    font-size: large;
+    font-weight: 500;
+}
+
+
+footer {
+    height: max-content;
+    background: linear-gradient(90deg, #1d3d4f, #1e5170);
+}
+
+footer a {
+    width: min-content;
+    color: whitesmoke;
+    font-weight: 500;
+    
+    margin: 0 1.2vw;
+}
