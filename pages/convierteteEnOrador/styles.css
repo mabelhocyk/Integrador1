@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif; 
+
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+header {
+    width: 100%;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px
+}
+
+.promoCard {
+    border: 2px solid burlywood;
+    height: 200px;
+    width: 250px;
+    transition: all 300ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.promoCard:hover {
+    /* border: 2px solid lightblue; */
+    border: 2px solid transparent;
+    box-shadow: 0 0 15px 0.5px rgba(0, 0, 0, 0.153);
+}
+
+.promoCardSelected {
+    height: 200px;
+    width: 250px;
+    transition: all 500ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #cbe5fe;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    /* box-shadow: 0 0 10px 2px #cbe5fe; */
+}
+
+
+
+.promoCard h3, .promoCardSelected h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.promoCard :nth-child(2), .promoCardSelected :nth-child(2) {
+    font-weight: 300;
+}
+.promoCard :nth-child(3) , .promoCardSelected :nth-child(3) {
+    font-weight: 700;
+}
+
+.promoCard :last-child, .promoCardSelected :last-child {
+    color: rgba(128, 128, 128, 0.693);
+}
+
+@media screen and (max-width: 600px) {
+    .cardContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .promoCard, .promoCardSelected {
+        width: 90%;
+        height: 200px;
+    }
+}
+
+.ventaTicket {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ventaTicket :first-child {
+    margin: 0;
+}
+
+.ventaTicket :last-child {
+    font-size: 2.5em;
+    font-weight: 400;
+    word-spacing: .2em;
+}
+
+.activeLink {
+    font-weight: 400 !important;
+}
+
+.noActive {
+    color: rgba(240, 248, 255, 0.482) !important;
+}
+
+/*  Estilos del formulario */
+
+.formularioCompra {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.formularioCompra input, select {
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(128, 128, 128, 0.111);
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.417);
+    font-weight: 500;
+}
+
+.inputsDosColumnas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.inputsDosColumnas input {
+ flex-grow: 1;
+}
+
+.inputEmail {
+    width: 100%;
+}
+
+.inputConLabel {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.inputConLabel label {
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+.errorInput {
+    outline: 2px solid rgb(251, 67, 0) !important;
+}
+
+.costoTotal {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 600px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #cbe5fe;
+}
+
+.costoTotal span {
+    box-sizing: border-box;
+    padding-left: 20px;
+    color: rgba(0, 98, 255, 0.805);
+    font-weight: 500;
+    width: 100%;
+}
+
+.contenedorDeBotones {
+    padding-top: 30px;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contenedorDeBotones button {
+    flex-grow: 1;
+    border: transparent;
+    height: 40px;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: #96c93e;
+}
+
+@media screen and (max-width: 650px) {
+    .ventaTicket {
+        padding: 0 10px;
+        font-size: small;
+        text-align: center;
+    }
+    .formularioCompra, 
+    .costoTotal,
+    .contenedorDeBotones {
+        width: 90%;
+    }
+    .inputsDosColumnas {
+        flex-direction: column;
+    }
+}

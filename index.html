@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Codo A Codo</title>
 </head>
@@ -37,7 +35,7 @@
                                 <a class="nav-link active text-white" aria-current="page" href="#">La conferencia</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Los oradores</a>
+                                <a class="nav-link text-white" href="#conoceALosOradores">Los oradores</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="#">El lugar y la fecha</a>
@@ -46,7 +44,8 @@
                                 <a class="nav-link text-white" href="#">Conviértete en orador</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link text-success" href="#">Comprar tickets</a>
+                                <a class="nav-link text-success" href="./pages/convierteteEnOrador/index.html">Comprar
+                                    tickets</a>
                             </li>
 
                         </ul>
@@ -64,14 +63,16 @@
                 </p>
                 <div class="mainContainer-buttons">
                     <button class="quieroSerOrador">Quiero ser orador</button>
-                    <button class="comprarTickets">Comprar tickets</button>
+                    <a href=./pages/convierteteEnOrador/index.html>
+                        <button class="comprarTickets">Comprar tickets</button>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section>
+        <section id="conoceALosOradores" >
             <div class="container d-flex flex-column pt-1 pb-2">
                 <div class="container d-flex flex-column align-items-center">
                     <span class="text-nowrap">CONOCE A LOS</span>
@@ -138,7 +139,7 @@
                 </div>
             </div>
         </section>
-        
+
         <article>
             <div class="container-fluid py-4">
                 <div class="row">
@@ -242,6 +243,9 @@
         </nav>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
