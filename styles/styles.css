@@ -41,7 +41,14 @@
     width: 48vw;
 }
 
+.mainContainer p {
+  max-height: 210px;
+  overflow-y: scroll;   
+}
 
+.mainContainer p::-webkit-scrollbar {
+    display: none;
+}
 
 .mainContainer-buttons {
     display: flex;
@@ -50,11 +57,17 @@
 }
 
 .quieroSerOrador {
+    transition: all 500ms;
     background-color: transparent;
     border:1px solid white;
     border-radius: 5px;
     color: white;
     padding: 10px;
+}
+
+.quieroSerOrador:hover {
+    background-color: white;
+    color: #29a744;
 }
 
 .comprarTickets {

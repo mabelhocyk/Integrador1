@@ -6,7 +6,7 @@
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -15,9 +15,14 @@ body {
 }
 
 header {
-    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
 }
 
+.customNav {
+    background-color: #333a40;
+}
 .cardContainer {
     display: flex;
     flex-wrap: wrap;
@@ -93,6 +98,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .ventaTicket :first-child {
@@ -208,7 +214,8 @@ input::placeholder {
 
 @media screen and (max-width: 650px) {
     .ventaTicket {
-        padding: 0 10px;
+        box-sizing: border-box;
+        
         font-size: small;
         text-align: center;
     }
@@ -220,4 +227,11 @@ input::placeholder {
     .inputsDosColumnas {
         flex-direction: column;
     }
+}
+
+.customFooter {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #1d3d4f, #1e5170);
 }
